@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:weightSum="1">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Accelerometer Values"
+        android:id="@+id/textView"
+        android:layout_weight="0.08"
+        android:gravity="center_vertical|center_horizontal"
+        android:textStyle="normal|bold"
+        android:textSize="@dimen/abc_text_size_display_1_material" />
+
+    <ToggleButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="New ToggleButton"
+        android:id="@+id/toggleButton"
+        android:layout_marginTop="61dp"
+        android:layout_below="@+id/textView"
+        android:layout_centerHorizontal="true"
+        android:onClick="onToggleClicked"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Large Text"
+        android:id="@+id/textView2"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:gravity="center_vertical|center_horizontal"
+        android:layout_below="@+id/toggleButton" />
+
+</RelativeLayout>
